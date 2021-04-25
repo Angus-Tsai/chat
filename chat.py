@@ -18,7 +18,8 @@ def convert(lines):
 		elif 'Tom' in line:
 			person = 'Tom'
 			continue
-		new.append(person + ': ' + line)
+		if person:	
+			new.append(person + ': ' + line)
 	return new
 
 #寫入檔案
